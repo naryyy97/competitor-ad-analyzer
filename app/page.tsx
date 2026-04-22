@@ -53,8 +53,8 @@ function parseAdBriefs(raw: string): AdBrief[] {
 // ─── Export to PDF ───────────────────────────────────────────────────────────
 
 function exportToPDF(
-  competitorName: 'Ella+Ross',
-  comparisonBrand: 'Everyroom Furniture',
+  competitorName: string,
+  comparisonBrand: string,
   sections: { title: string; items: string[] }[],
   concepts: GapConcept[],
   briefs: AdBrief[],

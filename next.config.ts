@@ -17,6 +17,11 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  // This was previously outside the closing brace
+  serverExternalPackages: [
+    '@sparticuz/chromium',
+    'playwright-core',
+  ],
 }
 
 export default nextConfig

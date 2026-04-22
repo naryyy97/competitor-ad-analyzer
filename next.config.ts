@@ -17,11 +17,13 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  // This was previously outside the closing brace
   serverExternalPackages: [
     '@sparticuz/chromium',
     'playwright-core',
   ],
+  outputFileTracingIncludes: {
+    '/api/analyze': ['./node_modules/@sparticuz/chromium/bin/**'],
+  },
 }
 
 export default nextConfig
